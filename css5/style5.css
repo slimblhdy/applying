@@ -1,0 +1,101 @@
+body{
+	font-family: "Dosis", sans-serif;
+	font-size: 16px; 
+	background-color: white;
+}
+
+h1,h2,h3 {
+	font-family: "Roboto", sans-serif;
+	font-weight: lighter;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container{
+ 	width: 1200px;
+ 	margin: 40px auto;
+ 	z-index:1;
+ }
+
+ @media (max-width: 760px){
+ 	.container{
+ 		width: 600px
+ 	}
+ }
+
+ @media (max-width: 500px){
+ 
+ 	.container{
+ 		width: 400px
+ 	}
+ }
+
+ .card-white{
+ 	background-image:linear-gradient(-225deg,rgba(119, 93, 148, 0.7) 0%,rgba(0,0,0,0.8) 50%);
+ 	color: white;
+ 	padding: 40px;
+ 	box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+ 	border-radius: 4px;
+ 	margin: 20px 0px;
+ 	text-align: center;
+ }
+ 
+.img-circle{
+ 	border-radius: 50%;
+ }
+
+ .progress{
+ 	margin: 300px auto;
+ }
+
+ .progress img {
+ 	margin-bottom: 30px;
+ }
+
+ ul li{
+ 	display: inline-block;
+ 	width: 150px;
+ 	position: relative;
+ }
+
+ul li .fas{
+	background: #2E2E2E;
+	width: 16px;
+	height: 16px;
+	color: #fff;
+	border-radius: 50%;
+	padding: 7px;
+	
+}
+
+ul li .fas::after{
+	content: '';
+	background:#2E2E2E;
+	height: 5px;
+	width:155px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 110px;
+	z-index:-1;
+}
+
+ul li:nth-child(4) .fas{
+	background:#775D94;
+}
+
+ul li:nth-child(3) .fas::after{
+	background:#775D94;
+}
+ul li:nth-child(1) .fas::after{
+	background:#775D94;
+}
+ul li:nth-child(2) .fas::after{
+	background:#775D94;
+}
+#Dashboard{
+background-image: linear-gradient(-225deg,rgba(0,0,0,0.8) 100%, rgba(0,0,0,0.1) 0%),url(../images/d1.jpg);
+background-size: cover;
+}
